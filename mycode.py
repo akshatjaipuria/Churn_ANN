@@ -48,10 +48,10 @@ classifier = Sequential()
 
 #adding first hidden layer to ANN
 classifier.add(Dense(units = 6, kernel_initializer = 'uniform', activation = 'relu', input_dim = 11))
-classifier.add(Dropout(rate = 0.1))
+# classifier.add(Dropout(rate = 0.1))
 # second hidden layer
 classifier.add(Dense(units = 6, kernel_initializer = 'uniform', activation = 'relu'))
-classifier.add(Dropout(rate = 0.1))
+# classifier.add(Dropout(rate = 0.1))
 #output layer
 classifier.add(Dense(units = 1, kernel_initializer = 'uniform', activation = 'sigmoid'))
 
